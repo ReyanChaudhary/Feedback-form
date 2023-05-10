@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <img class="bg" src="bgimage.jpg" alt="Background">
+    <div class="container">
+
+        <!-- Headings and instructions -->
+        <h1>Feedback Form</h1>
+        <p>Please enter your details below correctly</p>
+        <script src="index.js"></script>
+
+        <!-- Creating a input form -->
+        <form action="index.php" method="POST">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <textarea name="desc" id="desc" cols="30" rows="10"
+                placeholder="Tell us about your experience using this software"></textarea>
+            <button class="btn">Submit</button>
+            <button class="btn">reset</button>
+
+            <!-- For making a database we will need 8 colums such that we will need one colom for serial number nd other for time and date indexing + 6 colums for data entry through our generated form-->
+            <!-- 
+            INSERT INTO `feedback` (`s.no.`, `name`, `age`, `gender`, `email`, `phone`, `other`, `date and time`) VALUES ('1', 'Admin', '20', 'Male', 'chaudharyreyan2@gmail.com', '6264440364', 'This is admin', current_timestamp()); -->
+
+
+        </form>
+    </div>
+</body>
+
+</html>
